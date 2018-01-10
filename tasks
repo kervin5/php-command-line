@@ -25,5 +25,6 @@ $dbAdapter = new \Greenjocote\DatabaseAdapter($pdo);
 
 $app->add(new Greenjocote\ShowCommand($dbAdapter));
 $app->add(new \Greenjocote\AddCommand($dbAdapter));
+$app->add(new \Greenjocote\CompleteCommnad($dbAdapter));
 
 $app->run();
